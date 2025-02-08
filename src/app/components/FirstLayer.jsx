@@ -25,7 +25,7 @@ const AnimatedSection = () => {
             end: "+=150%",
             pin: true,
             scrub: true,
-            markers: true,
+            markers: false,
           },
         })
         .to(imgRef.current, {
