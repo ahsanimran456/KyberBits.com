@@ -1,0 +1,323 @@
+@keyframes shineEffect {
+    0% {
+        opacity: 0.1;
+        /* Halka shade */
+        transform: translateY(-5px) scale(1);
+    }
+
+    50% {
+        opacity: 0.3;
+        /* Thoda halka effect */
+        transform: translateY(0px) scale(1.05);
+    }
+
+    100% {
+        opacity: 0.1;
+        transform: translateY(-5px) scale(1);
+    }
+}
+
+.animate-shine {
+    animation: shineEffect 4s infinite ease-in-out;
+    filter: blur(50px);
+    /* Zyada blur hatane ke liye isko reduce karlo */
+    opacity: 0.2;
+    /* Halka kar diya */
+}
+
+
+
+
+
+.slick-track {
+    display: flex !important;
+    gap: 10px !important;
+}
+
+
+
+.bg-shades::before {
+    content: " ";
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    right: -10rem;
+    top: -10rem;
+    transform: rotate(-45deg);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%,
+            #4ade80 35deg,  /* from-green-400 */
+            #3b82f6 150deg, /* via-blue-500 */
+            #9333ea 360deg  /* to-purple-600 */
+        );
+    filter: blur(150px);
+    opacity: 0.5;
+}
+.bg-shades-left::before {
+    content: " ";
+    position: absolute;
+    width: 50rem;
+    height: 50rem;
+    left: -10rem;
+    top: -10rem;
+    transform: rotate(-45deg);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%,
+            #4ade80 35deg,  /* from-green-400 */
+            #3b82f6 150deg, /* via-blue-500 */
+            #9333ea 360deg  /* to-purple-600 */
+        );
+    filter: blur(150px);
+    opacity: 0.5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.content-heading {
+    isolation: isolate;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    white-space: nowrap;
+    max-width: 16.8rem;
+    text-align: right;
+    font-size: 1.25rem;
+}
+
+.th-1 {
+    left: -50%;
+    top: -95px;
+}
+
+.th-2 {
+    top: 2%;
+    left: -38%;
+}
+
+.th-3 {
+    left: -77.5%;
+    top: 43%;
+}
+
+.th-4 {
+    left: -50%;
+    bottom: 0;
+}
+
+/* for right  */
+
+.th-r-1 {
+    top: -95px;
+    right: -43%;
+}
+
+.th-r-2 {
+    top: 53px;
+    right: -74%;
+}
+
+.th-r-3 {
+    top: 133px;
+    right: -79%;
+}
+
+.th-r-4 {
+    top: 318px;
+    right: -72%;
+}
+
+
+.content-heading-lines {
+    position: relative;
+    height: 1px;
+    background-color: #fff;
+    width: 100%;
+    margin-top: .125rem;
+    pointer-events: none;
+}
+
+.th-1-lines,
+.th-2-lines,
+.th-3-lines,
+.th-4-lines,
+.th-r-1-lines,
+.th-r-2-lines,
+.th-r-3-lines,
+.th-r-4-lines {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    height: 1px;
+    background-color: #fff;
+    transform-origin: 0 0;
+}
+
+.th-1-lines {
+    width: 57%;
+    transform: rotate(35deg);
+}
+
+.th-2-lines {
+    width: 57%;
+    transform: rotate(28deg);
+}
+
+.th-3-lines {
+    width: 46%;
+    transform: rotate(10deg);
+}
+
+.th-4-lines {
+    width: 90%;
+    transform: rotate(-20deg);
+}
+
+.th-r-1-lines {
+    width: 55%;
+    transform: rotate(114deg);
+    right: 100% !important;
+    left: 0;
+}
+
+.th-r-2-lines {
+    width: 36%;
+    transform: rotate(145deg);
+    right: 100% !important;
+    left: 0;
+}
+
+.th-r-3-lines {
+    width: 36%;
+    transform: rotate(145deg);
+    right: 100% !important;
+    left: 0;
+}
+
+.th-r-4-lines {
+    width: 46%;
+    transform: rotate(197deg);
+    right: 100% !important;
+    left: 0;
+}
+
+
+
+.th-1-dot,
+.th-2-dot,
+.th-3-dot,
+.th-4-dot,
+.th-r-1-dot,
+.th-r-2-dot,
+.th-r-3-dot,
+.th-r-4-dot {
+    position: absolute;
+    width: .325rem;
+    height: .325rem;
+    border-radius: 999rem;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+
+}
+
+.th-1-dot {
+    bottom: -88px;
+    right: -125px;
+}
+
+.th-2-dot {
+    bottom: -46px;
+    right: -83px;
+}
+
+.th-3-dot {
+    bottom: -24px;
+    right: -118px;
+}
+
+.th-4-dot {
+    bottom: 48px;
+    right: -151px;
+}
+
+
+/* right  */
+
+.th-r-1-dot {
+    bottom: -133px;
+    left: -59px;
+}
+
+.th-r-2-dot {
+    top: 85px;
+    left: -77px;
+}
+
+.th-r-3-dot {
+    top: 85px;
+    left: -77px;
+}
+
+.th-r-4-dot {
+    top: -3px;
+    left: -113px;
+}
+
+
+
+
+/* thi upper code done  */
+
+.chart-container::before {
+    content: "";
+    position: absolute;
+    top: 18%;
+    left: 50%;
+    transform: translate(-50%, -54%);
+    z-index: -2;
+    background-image: url('https://www.qubetics.com/img/contact-gradient.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: calc(100vw + 6rem);
+    height: 70rem;
+}
+.chart-container-inner::before {
+
+    top: 10% !important;
+   
+}
+
+.chart-container::after {
+    content: "";
+    position: absolute;
+    top: -194px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: -1;
+    background-image: url('https://www.qubetics.com/img/contact-curve/contact-curve.webp');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100vw;
+    height: 30rem;
+    max-width: 108rem;
+}

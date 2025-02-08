@@ -3,8 +3,10 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* --background: #ffffff;
+  --foreground: #171717; */
+  --background: #0C0C0C;
+  --foreground: #ffff;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,6 +18,9 @@
 
 body {
   color: var(--foreground);
+  /* background: var(--background);/ */
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
+  overflow-x:hidden ;
+  /* overflow-x: hidden; */
 }
