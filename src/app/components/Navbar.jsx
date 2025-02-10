@@ -72,10 +72,11 @@ const Navbar = () => {
                 <div className="flex items-center space-x-4">
                     {/* Join Presale Button */}
                     <Link href="/join-presale">
-                        <button className="px-4 py-2 font-medium text-xs text-black rounded-full shadow-lg bg-gradient-to-r from-green-200 via-blue-400 to-purple-500 hover:opacity-90 transition-all duration-300">
-                            Join Presale
-                        </button>
-                    </Link>
+    <button className="relative px-4 py-2 font-medium text-sm text-white rounded-full shadow-lg bg-gradient-to-r from-green-300 via-blue-500 to-indigo-600 transition-all duration-500 ease-out overflow-hidden hover:scale-105 hover:shadow-xl">
+        <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -translate-x-full hover:translate-x-full transition-all duration-700"></span>
+        Join Presale
+    </button>
+</Link>
 
                     {/* Mobile Menu Button */}
                     <div className="lg:hidden">

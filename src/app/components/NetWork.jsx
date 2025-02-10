@@ -43,7 +43,7 @@ const NetWork = () => {
         viewport={{ once: false }} // Keep triggering animation when in view
       >
         <motion.div
-          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
           transition={{ duration: 1, delay: 0.2 }}

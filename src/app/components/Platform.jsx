@@ -20,7 +20,7 @@ const Platform = () => {
         viewport={{ once: false }} 
       >
         <motion.div
-          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+          className="lg:text-4xl md:text-3xl text-3xl font-title font-semibold lg:max-w-[33rem] w-full leading-normal   text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }} 
           transition={{ duration: 1, delay: 0.2 }}
@@ -36,7 +36,7 @@ const Platform = () => {
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
         >
-          Our Web3-powered tokenized asset marketplace on KyberBits will simplify the acquisition of digital assets by removing traditional barriers, fostering a new approach to asset exchange. This decentralized platform ensures equal access for all participants to emerging opportunities within the ecosystem.
+         Our Web3-powered tokenized asset marketplace on KyberBits will simplify the acquisition of digital assets by removing traditional barriers, fostering a new approach to asset exchange. This decentralized platform ensures equal access for all participants to emerging opportunities within the ecosystem.
         </motion.p>
 
         <motion.div

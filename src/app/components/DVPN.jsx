@@ -21,7 +21,7 @@ const DVPN = () => {
         viewport={{ once: false }} // Keep triggering animation when in view
       >
         <motion.div
-          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
           transition={{ duration: 1, delay: 0.2 }}
@@ -37,7 +37,7 @@ const DVPN = () => {
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
         >
-          The Qubetics ecosystem introduces a decentralized VPN (dVPN) service designed to enhance security, privacy, and access to an unrestricted internet. Unlike traditional centralized VPN providers that can log, censor, or restrict user data. Operating on a fully decentralized, peer-to-peer network, ensures that no single authority controls user traffic or data. This decentralized model leverages blockchain technology to offer unparalleled transparency, privacy, and resistance to censorship
+          The KyberBits ecosystem introduces a decentralized VPN (dVPN) service designed to enhance security, privacy, and access to an unrestricted internet. Unlike traditional centralized VPN providers that can log, censor, or restrict user data. Operating on a fully decentralized, peer-to-peer network, ensures that no single authority controls user traffic or data. This decentralized model leverages blockchain technology to offer unparalleled transparency, privacy, and resistance to censorship
         </motion.p>
 
         <motion.div

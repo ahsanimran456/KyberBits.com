@@ -5,7 +5,7 @@ import mobile from '../../../public/Assests/images/wallet.png';
 import Image from 'next/image';
 
 const NewEra = () => {
-  const words = `Shaping a New Era of Financial Interaction with QUSD`;
+  const words = `Shaping a New Era of Financial Interaction with KYUSD`;
 
   return (
     <section className="max-w-screen-xl mb-64 overflow-hidden mx-auto flex flex-wrap flex-col-reverse lg:flex-row items-center w-full text-white pt-24 relative">
@@ -19,7 +19,7 @@ const NewEra = () => {
         viewport={{ once: false }} 
       >
         <motion.div
-          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }} 
           transition={{ duration: 1, delay: 0.2 }}
@@ -35,7 +35,7 @@ const NewEra = () => {
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
         >
-          The integration of $TICS tokens with the soon-to-be-deployed USDC/USDT-backed QUSD, promotes market stability and accurate transaction reflections, enhancing user confidence. This strategic pairing is designed to increase demand for $TICS, fostering enhanced utility and user engagement due to its security and potential.
+          The integration of KY BITS tokens with the soon-to-be-deployed USDC/USDT-backed KUSD, promotes market stability and accurate transaction reflections, enhancing user confidence. This strategic pairing is designed to increase demand for $BITS, fostering enhanced utility and user engagement due to its security and potential.
         </motion.p>
 
         <motion.div

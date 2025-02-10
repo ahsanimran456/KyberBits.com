@@ -83,7 +83,7 @@ const QNA = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         viewport={{ once: false }}
                     >
-                        QNA
+                        Q & A
                     </motion.h1>
                 </motion.div>
 

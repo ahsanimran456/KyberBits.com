@@ -7,6 +7,11 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        // title: ["Merriweather", "serif"],
+        // title: [ "Merriweather", "serif"]
+        title: [ "Merriweather", "serif"]
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

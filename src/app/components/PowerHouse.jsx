@@ -43,7 +43,7 @@ const PowerHouse = () => {
         viewport={{ once: false }} // Keep triggering animation when in view
       >
         <motion.div
-          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+          className="lg:text-4xl font-title md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-bold  text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
           transition={{ duration: 1, delay: 0.2 }}
@@ -59,7 +59,7 @@ const PowerHouse = () => {
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
         >
-          The integration of QUSD tokens with the dollar-backed Tether/Circle (USDT/USDC) introduces stability to the crypto environment, closely mirroring real-world currency values. This strategic connection between Qubetics and QUSD aims to enhance the utility of the TICS token, drawing users to its dependable and promising features.
+          Meet the KyberBits multi-chain crypto Wallet—a non-custodial, open-source powerhouse. Enjoy feeless $BITS transfers in-app, debit & virtual cards, seamless Apple Pay and Google Pay integration, a decentralized VPN (dVPN) service, and access to a tokenized asset marketplace, all conveniently housed in one application.
         </motion.p>
 
         <motion.div
