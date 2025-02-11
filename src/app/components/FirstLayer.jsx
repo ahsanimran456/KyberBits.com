@@ -128,16 +128,20 @@ const AnimatedSection = () => {
             </div>
           </div>
           <div ref={centerRef} className="main-hero-center">
-            <Image src="/center.png" alt="Hero Image" width={300} height={300} priority />
+            <Image src="/coin.png" alt="Hero Image" width={220} height={220} priority />
           </div>
         </section>
       </div>
 
       <div className="image-container">
-        <img
+        <Image
           ref={imgRef}
-          src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp"
+          // src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp"
+          src="/layer.png"
           alt="Background Image"
+          layout="fill" // Full container ko cover karega
+          objectFit="cover" // Image ko stretch hone se bachayega
+          priority // Fast loading ke liye
         />
       </div>
     </div>

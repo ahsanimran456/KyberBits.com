@@ -25,3 +25,23 @@ body {
   overflow-x:hidden ;
   /* overflow-x: hidden; */
 }
+
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 6px; /* Scrollbar width */
+}
+
+::-webkit-scrollbar-track {
+  background: transparent; /* Track background */
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3); /* Thumb color */
+  border-radius: 10px; /* Rounded edges */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.5); /* Hover effect */
+}
+
