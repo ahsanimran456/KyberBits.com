@@ -31,7 +31,7 @@ const AnimatedSection = () => {
           },
         })
         .to(imgRef.current, {
-          scale: 2,
+          scale: 4,
           z: 350,
           transformOrigin: "center center",
           ease: "power1.inOut",
@@ -86,7 +86,7 @@ const AnimatedSection = () => {
   return (
     <div ref={wrapperRef} className="wrapper-main">
       <div className="content">
-        <section ref={heroRef} className="section main-hero-section  ">
+        <section ref={heroRef} className="section main-hero-section  bg-shades ">
           <div className="absolute main-hero-container w-[700px] max-w-screen-2xl mx-auto">
             <div >
               <h1
@@ -128,7 +128,7 @@ const AnimatedSection = () => {
             </div>
           </div>
           <div ref={centerRef} className="main-hero-center">
-            <Image src="/coin.png" alt="Hero Image" width={220} height={220} priority />
+            <Image src="/coin.png" alt="Hero Image" width={180} height={180} priority />
           </div>
         </section>
       </div>
@@ -137,7 +137,7 @@ const AnimatedSection = () => {
         <Image
           ref={imgRef}
           // src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp"
-          src="/layer.png"
+          src="/layer2.png"
           alt="Background Image"
           layout="fill" // Full container ko cover karega
           objectFit="cover" // Image ko stretch hone se bachayega
