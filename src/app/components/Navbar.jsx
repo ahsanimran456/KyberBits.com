@@ -71,7 +71,7 @@ const Navbar = () => {
                 {/* Right Side */}
                 <div className="flex items-center space-x-4">
                     {/* Join Presale Button */}
-                    <Link href="/join-presale">
+                    <Link href="/presale">
     <button className="relative px-4 py-2 font-medium text-sm text-white rounded-full shadow-lg bg-gradient-to-r from-green-300 via-blue-500 to-indigo-600 transition-all duration-500 ease-out overflow-hidden hover:scale-105 hover:shadow-xl">
         <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -translate-x-full hover:translate-x-full transition-all duration-700"></span>
         Join Presale

@@ -86,24 +86,25 @@ const AnimatedSection = () => {
   return (
     <div ref={wrapperRef} className="wrapper-main">
       <div className="content">
-        <section ref={heroRef} className="section main-hero-section  bg-shades ">
+        <section ref={heroRef} className="section main-hero-section  bg-shades-hero ">
           <div className="absolute main-hero-container w-[700px] max-w-screen-2xl mx-auto">
             <div >
               <h1
-                className="text-2xl font-title text-center leading-tight  font-bold text-transparent bg-clip-text"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #0A6ABC, #14EFF4 15%, rgb(0 255 153) 40%, rgb(120 223 147) 50%, rgb(23 255 209) 70%, rgb(121, 255, 247) 90%)",
-                }}
+                className="text-2xl font-title text-center leading-tight  font-bold headings-gr"
+                // style={{
+                //   backgroundImage:
+                //     "linear-gradient(90deg, #0A6ABC, #14EFF4 15%, rgb(0 255 153) 40%, rgb(120 223 147) 50%, rgb(23 255 209) 70%, rgb(121, 255, 247) 90%)",
+                // }}
               >
                 KyberBits: The World's First Layer 1,
               </h1>
               <h3
-                className="text-2xl font-title text-center leading-tight  font-bold text-transparent bg-clip-text"
-                style={{
-                  backgroundImage:
-                    "linear-gradient(90deg, #0A6ABC, #14EFF4 15%, rgb(0 255 153) 40%, rgb(120 223 147) 50%, rgb(23 255 209) 70%, rgb(121, 255, 247) 90%)",
-                }}
+                // className="text-2xl font-title text-center leading-tight  font-bold text-transparent bg-clip-text"
+                  className="text-2xl font-title  leading-normal font-bold  headings-gr"
+                // style={{
+                //   backgroundImage:
+                //     "linear-gradient(90deg, #0A6ABC, #14EFF4 15%, rgb(0 255 153) 40%, rgb(120 223 147) 50%, rgb(23 255 209) 70%, rgb(121, 255, 247) 90%)",
+                // }}
               >
                 Web3 Aggregated Ecosystem That Unites Leading Blockchains Including Bitcoin, Ethereum, Solana & More.
               </h3>

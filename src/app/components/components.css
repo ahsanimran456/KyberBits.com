@@ -75,6 +75,25 @@
     opacity: 0.5;
 }
 
+.bg-shades-hero::before{
+    content: "";
+    position: absolute !important;
+    width: 50rem;
+    height: 50rem;
+    right: -10rem;
+    top: -10rem;
+    transform: rotate(-45deg);
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg at 50% 50%,
+    rgba(74, 222, 128, 0.5) 35deg,  /* Green opacity 0.5 */
+    #3b82f6 150deg, 
+    #9333ea 360deg  
+);
+filter: blur(150px);
+opacity: 0.5;
+}
 
 
 
