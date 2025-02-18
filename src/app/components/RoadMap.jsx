@@ -9,7 +9,7 @@ import "./components.css"
 const RoadMap = () => {
   const roadmapItems = [
     {
-      quarter: "Q2 2024",
+      quarter: "Q1 2024",
       title: "April – June",
       heading: "Team Establishment and Foundation Building",
       points: [
@@ -17,19 +17,10 @@ const RoadMap = () => {
         "Launch the whitelist website for early adopters.",
         "Begin drafting the KyberBits whitepaper.",
         "Attend the Blockchain Life Expo in Dubai.",
-        "Conduct an interview with Web3TV to increase visibility.",
-        "Engage with key figures in the blockchain industry for strategic insights.",
-        "Partner with developers to begin the technical groundwork.",
-        "Finalize the draft of the whitepaper.",
-        "Design the ICO website.",
-        "Develop and test a comprehensive marketing strategy.",
-        "Identify and define the scope of the KyberBits blockchain.",
-        "Initiate marketing efforts to raise awareness about the whitelist.",
-        "Publish articles and press releases to build initial momentum.",
       ],
     },
     {
-      quarter: "Q3 2024",
+      quarter: "Q2 2024",
       title: "July – September",
       heading: "Strategic Partnerships and Preparations",
       points: [
@@ -39,15 +30,11 @@ const RoadMap = () => {
         "Set up the KyberBits GitHub environment for collaborative development.",
         "Finalize the scope of the blockchain project.",
         "Complete the design and functionality of the ICO website.",
-        "Finalize the design and layout of the whitepaper.",
-        "Partner with PhishFort for additional security measures.",
-        "Pre-sale initiation.",
-        "Participate in Token 2049 Singapore for global exposure.",
-        "Form strategic partnerships with financial service providers.",
+       
       ],
     },
     {
-      quarter: "Q4 2024",
+      quarter: "Q3 2024",
       title: "October – December",
       heading: "Core Development and Community Engagement",
       points: [
@@ -58,7 +45,7 @@ const RoadMap = () => {
       ],
     },
     {
-      quarter: "Q1 2025",
+      quarter: "Q4 2025",
       title: "January – March",
       heading: "Product Launch and Expansion",
       points: [
@@ -127,7 +114,7 @@ const RoadMap = () => {
         viewport={{ once: false }} // Keep triggering animation when in view
       >
         <motion.h1
-           className="text-4xl text-center  leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+           className="text-4xl text-center  leading-normal font-bold font-title   headings-gr"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
           transition={{ duration: 1, delay: 0.2 }}
@@ -142,7 +129,7 @@ const RoadMap = () => {
           key={index}
           className="p-4 bg-[#1F1F1F] rounded-2xl shadow-lg mx-4"
         >
-          <h2 className="text-3xl text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600 font-bold mb-4">
+          <h2 className="text-3xl font-title   headings-gr font-bold mb-4">
             {item.quarter}:{item.title}
           </h2>
           <h3 className="text-xl mt-2 mb-6">{item.heading}</h3>

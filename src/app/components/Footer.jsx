@@ -1,36 +1,34 @@
+import Image from "next/image";
+import { FaFacebookF, FaTwitter, FaTelegramPlane, FaYoutube, FaInstagram, FaTiktok } from "react-icons/fa";
+
 const Footer = () => {
     return (
-        <footer className="relative text-white py-10 mt-16  overflow-hidden">
+        <footer className="text-white py-10 mt-16 relative ">
             {/* Gradient Background */}
-            <div className="absolute inset-0 z-[-1]">
-                <div className="_footer_gradient" />
-            </div>
 
-            <div className="max-w-screen-xl mx-auto">
+            <div className="max-w-screen-xl mx-auto relative px-6 bg-shades-bottom">
                 <div className="flex flex-col md:flex-row justify-between items-start space-y-8 md:space-y-0">
                     {/* Left Section */}
                     <div className="md:w-1/3">
                         <div className="flex items-center space-x-2 mb-4">
-                            <h1 className="text-2xl font-bold">KyberBits</h1>
+                            <Image src='/weblogo.png' alt="logo" width={120} height={120} />
                         </div>
-                        <p className="text-gray-400 mb-6">
-                            Join the KyberBits crypto presale—Strongest 1, Web3 aggregated ecosystem that unites leading blockchains like Bitcoin, Ethereum, and Solana. Our platform is designed for innovative applications set to revolutionize blockchain utilization.
+                        <p className="text-[#909090] text-sm mb-6">
+                            Join the KyberBits crypto presale—Strongest 1, Web3 aggregated ecosystem that unites leading blockchains like Bitcoin, Ethereum, and Solana.
                         </p>
-                        <p className="text-gray-500">
+                        <p className="text-[#909090] text-sm">
                             KyberBits <br />
                             Company No: FSC/200/LLC 2233/24 <br />
                             Registered Office: Seychelles<br />
-                            <a href="mailto:support@kyberbits.com" className="text-blue-400">
-                                support@kyberbits.com
-                            </a>
+                            <a href="mailto:support@kyberbits.com" className="text-blue-400">support@kyberbits.com</a>
                         </p>
                     </div>
 
                     {/* Middle Sections */}
-                    <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-16">
+                    <div className="flex flex-col md:flex-row space-y-8 md:space-y-0 md:space-x-44">
                         <div>
                             <h3 className="font-semibold text-lg mb-4">About</h3>
-                            <ul className="space-y-2 text-gray-400">
+                            <ul className="space-y-2 text-white text-sm">
                                 <li>Our Vision</li>
                                 <li>Tokenomics</li>
                                 <li>Roadmap</li>
@@ -42,7 +40,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h3 className="font-semibold text-lg mb-4">Features</h3>
-                            <ul className="space-y-2 text-gray-400">
+                            <ul className="space-y-2 text-white">
                                 <li>Wallet</li>
                                 <li>Banks & Institutions</li>
                                 <li>QUSD</li>
@@ -52,7 +50,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h3 className="font-semibold text-lg mb-4">Legal</h3>
-                            <ul className="space-y-2 text-gray-400">
+                            <ul className="space-y-2 text-white">
                                 <li>Terms of Use</li>
                                 <li>Privacy Policy</li>
                                 <li>Cookies Policy</li>
@@ -68,24 +66,18 @@ const Footer = () => {
                 <div className="mt-10 border-t border-gray-800 pt-6 text-center">
                     <h3 className="text-lg font-semibold mb-4">Get in touch!</h3>
                     <div className="flex justify-center space-x-6">
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-telegram"></i>
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-youtube"></i>
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" className="text-gray-400 hover:text-white">
-                            <i className="fab fa-tiktok"></i>
-                        </a>
+                        {[
+                            { icon: FaFacebookF, link: "#" },
+                            { icon: FaTwitter, link: "#" },
+                            { icon: FaTelegramPlane, link: "#" },
+                            { icon: FaYoutube, link: "#" },
+                            { icon: FaInstagram, link: "#" },
+                            { icon: FaTiktok, link: "#" }
+                        ].map(({ icon: Icon, link }, index) => (
+                            <a key={index} href={link} className="text-gray-400 hover:text-white transition duration-300 text-xl">
+                                <Icon className="hover:scale-110 transition-transform duration-200" />
+                            </a>
+                        ))}
                     </div>
                 </div>
             </div>

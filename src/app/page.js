@@ -13,6 +13,8 @@ import RoadMap from "./components/RoadMap";
 import Partners from "./components/Partners";
 import QNA from "./components/QNA";
 import SendEmail from "./components/SendEmail";
+import TokenomicsNew from "./components/TokenomicsNew";
+import Timeline, { RoadmapSlider } from "./components/RaodMapNew";
 
 export default function Home() {
 
@@ -29,10 +31,12 @@ export default function Home() {
       <DVPN />
       <StreamLine />
       <NewEra />
-      <div className="bg-[#000000] relative">
+      {/* <div className="bg-[#000000] relative">
       <Tokenomics />
-      </div>
+      </div> */}
+      <TokenomicsNew/>
       <RoadMap />
+      {/* <RoadmapSlider/> */}
       <Partners />
       <QNA />
       <SendEmail />

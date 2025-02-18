@@ -43,7 +43,7 @@ const StreamLine = () => {
         viewport={{ once: false }} // Keep triggering animation when in view
       >
         <motion.div
-          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-semibold  headings-gr"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
           transition={{ duration: 1, delay: 0.2 }}
@@ -59,7 +59,7 @@ const StreamLine = () => {
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
         >
-          Imagine effortlessly generating NFT QR codes for music events, enabling secure ticketing, exclusive access, and unique fan experiences, all with a few clicks. Using our planned intuitive platform, anyone can design and deploy these NFTs without prior coding knowledge, thanks to AI-guided prompts and drag-and-drop functionalities. Beyond music events, the possibilities are limitless; from personalized event memorabilia to loyalty rewards and beyond, Qubetics will empower you to transform any idea into a blockchain reality, making advanced technology accessible to all.
+          Imagine effortlessly generating NFT QR codes for music events, enabling secure ticketing, exclusive access, and unique fan experiences, all with a few clicks. Using our planned intuitive platform, anyone can design and deploy these NFTs without prior coding knowledge, thanks to AI-guided prompts and drag-and-drop functionalities. Beyond music events, the possibilities are limitless; from personalized event memorabilia to loyalty rewards and beyond, KyberBits will empower you to transform any idea into a blockchain reality, making advanced technology accessible to all.
         </motion.p>
 
         <motion.div
@@ -69,8 +69,11 @@ const StreamLine = () => {
           transition={{ delay: 0.6, duration: 1 }}
           viewport={{ once: false }}
         >
-          <button className="px-6 py-3 rounded-full w-[200px] bg-[#202020] hover:bg-gray-800 transition">
+         
+          <button className="custom_btn_sec buttons_all_sec ">
+            <span className="bg-[#141414] w-full h-full flex items-center justify-center">
             Learn More
+            </span>
           </button>
         </motion.div>
       </motion.div>

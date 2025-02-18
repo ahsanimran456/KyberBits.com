@@ -14,7 +14,7 @@ const partnerImages = [
 
 const Partners = () => {
     return (
-        <section className="max-w-screen-xl mx-auto flex items-center w-full text-white mt-24">
+        <section className="max-w-screen-xl mx-auto flex items-center w-full text-white mt-24 ">
             <motion.div
                 className="flex flex-col p-8 w-full space-y-7 text-center justify-center items-center"
                 initial={{ opacity: 0, y: 50 }}   // Start below the screen
@@ -30,7 +30,7 @@ const Partners = () => {
                     viewport={{ once: false }} // Keep triggering animation when in view
                 >
                     <motion.h1
-                        className="text-4xl leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                        className="text-4xl leading-normal  font-bold font-title   headings-gr"
                         initial={{ opacity: 0, y: -50 }}
                         whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
                         transition={{ duration: 1, delay: 0.2 }}

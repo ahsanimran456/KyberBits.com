@@ -8,7 +8,7 @@ const NewEra = () => {
   const words = `Shaping a New Era of Financial Interaction with KYUSD`;
 
   return (
-    <section className="max-w-screen-xl mb-64 overflow-hidden mx-auto flex flex-wrap flex-col-reverse lg:flex-row items-center w-full text-white pt-24 relative">
+    <section className="max-w-screen-xl  overflow-hidden mx-auto flex flex-wrap flex-col-reverse lg:flex-row items-center w-full text-white pt-24 relative">
       
       {/* Left Content */}
       <motion.div
@@ -19,7 +19,7 @@ const NewEra = () => {
         viewport={{ once: false }} 
       >
         <motion.div
-          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-semibold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+          className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-semibold  headings-gr"
           initial={{ opacity: 0, y: -50 }}
           whileInView={{ opacity: 1, y: 0 }} 
           transition={{ duration: 1, delay: 0.2 }}
@@ -45,9 +45,12 @@ const NewEra = () => {
           transition={{ delay: 0.6, duration: 1 }}
           viewport={{ once: false }}
         >
-          <button className="px-6 py-3 rounded-full w-[200px] bg-[#202020] hover:bg-gray-800 transition">
+           <button className="custom_btn_sec buttons_all_sec ">
+            <span className="bg-[#141414] w-full h-full flex items-center justify-center">
             Learn More
+            </span>
           </button>
+          
         </motion.div>
       </motion.div>
 

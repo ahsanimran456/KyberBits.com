@@ -21,7 +21,7 @@ const Tokenomics = ({ispageinner}) => {
         transition={{ duration: 1 }}
       >
         <motion.h1
-          className="text-4xl leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+          className="text-4xl leading-normal  font-bold font-title  headings-gr"
           initial={{ opacity: 0, y: -50 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1, delay: 0.3 }}

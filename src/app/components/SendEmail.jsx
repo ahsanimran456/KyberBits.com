@@ -30,7 +30,7 @@ const SendEmail = () => {
                 viewport={{ once: false }}
             >
                 <motion.p
-                    className="text-2xl font-bold mb-4"
+                    className="text-2xl font-bold "
                     initial={{ opacity: 0, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}
@@ -51,14 +51,14 @@ const SendEmail = () => {
                         type="email"
                         value={email}
                         onChange={handleEmailChange}
-                        className="p-3 rounded-3xl border-2 border-gray-300 focus:outline-none bg-transparent"
+                        className="p-3 rounded-3xl border-2  w-[400px] border-gray-300 focus:outline-none bg-transparent"
                         placeholder="abc@gmail.com"
                     />
-                    <button
-                        onClick={handleSubmit}
-                        className="px-6 py-3 rounded-full w-[200px] bg-[#202020] hover:bg-gray-800 transition"
-                    >
-                        Send Email
+                   
+                    <button className="custom_btn_sec buttons_all_sec "  onClick={handleSubmit} style={{width:"10rem"}}>
+                        <span className="bg-[black] w-full h-full flex items-center justify-center">
+                            Send Email
+                        </span>
                     </button>
                 </motion.div>
             </motion.div>
@@ -71,7 +71,7 @@ const SendEmail = () => {
                 transition={{ duration: 1, delay: 0.5 }}
                 viewport={{ once: false }}
             >
-               
+
                 <motion.p
                     className="text-2xl font-bold mb-4"
                     initial={{ opacity: 0, y: -50 }}
@@ -102,7 +102,7 @@ const SendEmail = () => {
                     />
                     {/* Google Chrome Icon */}
                     <Image
-                        src={google}
+                        src={'https://www.qubetics.com/assets/chrome-extension-B5E7moDo.svg'}
                         width={200}
                         height={200}
                         alt="Google Chrome"

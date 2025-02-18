@@ -91,20 +91,20 @@ const AnimatedSection = () => {
             <div >
               <h1
                 className="text-2xl font-title text-center leading-tight  font-bold headings-gr"
-                // style={{
-                //   backgroundImage:
-                //     "linear-gradient(90deg, #0A6ABC, #14EFF4 15%, rgb(0 255 153) 40%, rgb(120 223 147) 50%, rgb(23 255 209) 70%, rgb(121, 255, 247) 90%)",
-                // }}
+              // style={{
+              //   backgroundImage:
+              //     "linear-gradient(90deg, #0A6ABC, #14EFF4 15%, rgb(0 255 153) 40%, rgb(120 223 147) 50%, rgb(23 255 209) 70%, rgb(121, 255, 247) 90%)",
+              // }}
               >
                 KyberBits: The World's First Layer 1,
               </h1>
               <h3
                 // className="text-2xl font-title text-center leading-tight  font-bold text-transparent bg-clip-text"
-                  className="text-2xl font-title  leading-normal font-bold  headings-gr"
-                // style={{
-                //   backgroundImage:
-                //     "linear-gradient(90deg, #0A6ABC, #14EFF4 15%, rgb(0 255 153) 40%, rgb(120 223 147) 50%, rgb(23 255 209) 70%, rgb(121, 255, 247) 90%)",
-                // }}
+                className="text-2xl font-title  leading-normal font-bold  headings-gr"
+              // style={{
+              //   backgroundImage:
+              //     "linear-gradient(90deg, #0A6ABC, #14EFF4 15%, rgb(0 255 153) 40%, rgb(120 223 147) 50%, rgb(23 255 209) 70%, rgb(121, 255, 247) 90%)",
+              // }}
               >
                 Web3 Aggregated Ecosystem That Unites Leading Blockchains Including Bitcoin, Ethereum, Solana & More.
               </h3>
@@ -113,15 +113,21 @@ const AnimatedSection = () => {
               </p>
               <div className="flex justify-center flex-wrap mt-2 gap-4 mb-6">
                 {/* Gradient Button */}
-                <button
+                {/* <button
                   className="px-6 py-3 text-xs min-w-48 text-black font-semibold rounded-full shadow-lg bg-gradient-to-r from-green-200 via-blue-400 to-purple-500 hover:opacity-90 transition-all duration-300"
                 >
                   Join Presale
+                </button> */}
+
+                <button className="custom_herosect_btn  overflow-hidden hover:scale-105 hover:shadow-xl">
+                  <span className="w-full black  bg-gradient-to-r from-green-300 via-blue-500 to-indigo-600  h-full relative transition-all duration-500 ease-out">
+                    Join Presale
+                  </span>
                 </button>
 
                 {/* Dark Button */}
                 <button
-                  className="px-6 py-3 text-sm text-white min-w-48 font-semibold rounded-full shadow-lg bg-[#1a1a1a] hover:bg-[#333] transition-all duration-300"
+                  className="px-6 py-3 text-sm text-white min-w-48 font-normal rounded-full shadow-lg bg-[#1a1a1a] hover:bg-[#333] transition-all duration-300"
                 >
                   How to buy?
                 </button>
@@ -140,9 +146,9 @@ const AnimatedSection = () => {
           // src="https://assets-global.website-files.com/63ec206c5542613e2e5aa784/643312a6bc4ac122fc4e3afa_main%20home.webp"
           src="/layer2.png"
           alt="Background Image"
-          layout="fill" // Full container ko cover karega
-          objectFit="cover" // Image ko stretch hone se bachayega
-          priority // Fast loading ke liye
+          layout="fill"
+          objectFit="cover"
+          priority
         />
       </div>
     </div>

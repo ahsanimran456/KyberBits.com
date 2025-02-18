@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import { motion } from 'framer-motion'; // Import Framer Motion
+import { motion } from 'framer-motion';
 
 const QNA = () => {
     const questions = [
@@ -30,7 +30,7 @@ const QNA = () => {
         },
         {
             question: "How can I join the KyberBits presale?",
-            answer: "Head over to the buy page to join the KyberBits Presale",
+            answer: "Head over to the buy page to join the KyberBits Presale.",
         },
         {
             question: "What is the difference between KyberBits and BITS?",
@@ -46,18 +46,23 @@ const QNA = () => {
         },
         {
             question: "What functionalities does the KyberBits wallet offer?",
-            answer: "The KyberBits wallet supports multi-platform operations, debit and virtual card transactions, feeless transfers within the KyberBits ecosystem, and integration with major payment systems like Apple Pay and Google Pay.",
+            answer: "The KyberBits wallets supports multi-platform operations, Debit and virtual card transaction, Feeless transfer within the KyberBits ecosystem, integration with major payment systems like Apple pay and Google pay.",
         },
         {
             question: "Are there any KYC requirements to join KyberBits Network?",
-            answer: "KyberBits operates without KYC requirements, emphasizing user privacy and decentralization in line with blockchain ethos.",
+            answer: "KyberBits operates without KYC requirement, emphasizing user privacy and decentralization in line with blockchain ethos.",
         },
     ];
 
     const [activeIndex, setActiveIndex] = useState(null);
+    const [showMore, setShowMore] = useState(false);
 
     const toggleAnswer = (index) => {
         setActiveIndex(activeIndex === index ? null : index);
+    };
+
+    const toggleShowMore = () => {
+        setShowMore(!showMore);
     };
 
     return (
@@ -65,35 +70,32 @@ const QNA = () => {
             <motion.div
                 className="flex flex-col p-8 w-full space-y-7 text-center justify-center items-center"
                 initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
+                animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 1 }}
-                viewport={{ once: false }}
             >
                 <motion.div
                     className="max-auto max-w-4xl"
                     initial={{ opacity: 0, y: 50 }}
-                    whileInView={{ opacity: 1, y: 0 }}
+                    animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1 }}
-                    viewport={{ once: false }}
                 >
                     <motion.h1
-                        className="text-4xl leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                        className="text-4xl leading-normal font-bold font-title  headings-gr"
                         initial={{ opacity: 0, y: -50 }}
-                        whileInView={{ opacity: 1, y: 0 }}
+                        animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
-                        viewport={{ once: false }}
                     >
                         Q & A
                     </motion.h1>
                 </motion.div>
 
-                <div className="space-y-4   max-w-screen-xl mx-auto w-full px-16">
-                    {questions.map((item, index) => (
+                <div className="space-y-4 max-w-screen-xl mx-auto w-full px-16">
+                    {questions.slice(0, showMore ? questions.length : 5).map((item, index) => (
                         <motion.div
                             key={index}
                             className="border-b border-gray-600 pb-4 cursor-pointer transition-all duration-300"
                             initial={{ opacity: 0 }}
-                            whileInView={{ opacity: 1 }}
+                            animate={{ opacity: 1 }}
                             transition={{ duration: 0.6, delay: index * 0.1 }}
                         >
                             <div
@@ -129,11 +131,18 @@ const QNA = () => {
                         </motion.div>
                     ))}
                 </div>
-                <div  style={{marginTop:"83px"}}>
-                    <button className="px-6 py-3   rounded-full w-[200px] bg-[#202020] hover:bg-gray-800 transition">
-                        How to buy?
+
+                <div className='flex items-center justify-center w-full'>
+                    <button 
+                        className="custom_btn_sec buttons_all_sec mt-10" 
+                        style={{ width: "15%" }} 
+                        onClick={toggleShowMore}
+                    >
+                        <span className="bg-[#141414] w-full h-full flex items-center justify-center">
+                            {showMore ? "Show Less" : "Show More"}
+                        </span>
                     </button>
-                    </div>
+                </div>
             </motion.div>
         </section>
     );

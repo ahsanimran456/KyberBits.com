@@ -7,6 +7,7 @@ import Breadcrumbs from '../components/Breadcrumbs';
 import SendEmail from '../components/SendEmail';
 import Tokenomics from '../components/Tokenomics';
 import '../../app/components/components.css'
+import TokenomicsNew from '../components/TokenomicsNew';
 const Tokennomics = () => {
     return (
         <>
@@ -19,7 +20,7 @@ const Tokennomics = () => {
                 >
                     <Breadcrumbs />
                     <motion.h1
-                        className="text-4xl leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                        className="text-4xl leading-normal  font-bold font-title   headings-gr"
                         initial={{ opacity: 1, y: -50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
@@ -58,10 +59,11 @@ const Tokennomics = () => {
                     </div>
                 </motion.div>
             </section>
-            <Tokenomics ispageinner={true} />
+            {/* <Tokenomics ispageinner={true} /> */}
+            <TokenomicsNew/>
             <section className="max-w-screen-lg mx-auto py-8 px-4 mt-20 text-white">
                 <motion.h1
-                    className="text-5xl leading-normal text-center font-sans font-bold text-white"
+                    className="text-4xl leading-normal mb-4 text-center  font-bold text-white font-title  "
                     initial={{ opacity: 1, y: -50 }}
                     whileInView={{ opacity: 1, y: 0 }}
                     transition={{ duration: 1, delay: 0.2 }}

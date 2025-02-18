@@ -4,7 +4,8 @@ import Link from "next/link";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { FaBars, FaTimes } from "react-icons/fa";
-import logo from "../../../public/center.png";
+// import logo from "../../../public/center.png";
+import logo from "../../../public/weblogo.png";
 
 const Navbar = () => {
     const [scrolled, setScrolled] = useState(false);
@@ -45,7 +46,7 @@ const Navbar = () => {
             <div className="max-w-screen-2xl mx-auto flex items-center justify-between py-2 px-6">
                 <div className="flex items-center justify-center">
                     <Link href="/">
-                        <Image src={logo} alt="Logo" width={50} height={50} className="mr-4" />
+                        <Image src={logo} alt="Logo" width={120} height={120} className="mr-4" />
                     </Link>
                 </div>
 
@@ -56,8 +57,8 @@ const Navbar = () => {
                             <Link
                                 href={link.href}
                                 className={`transition-all duration-300 relative pb-1 ${pathname === link.href
-                                        ? "bg-clip-text text-transparent bg-gradient-to-r from-green-200 via-blue-400 to-purple-500"
-                                        : "hover:text-blue-400"
+                                    ? "bg-clip-text text-transparent bg-gradient-to-r from-green-200 via-blue-400 to-purple-500"
+                                    : "hover:text-blue-400"
                                     }`}
                             >
                                 {link.name}
@@ -72,11 +73,21 @@ const Navbar = () => {
                 <div className="flex items-center space-x-4">
                     {/* Join Presale Button */}
                     <Link href="/presale">
-    <button className="relative px-4 py-2 font-medium text-sm text-white rounded-full shadow-lg bg-gradient-to-r from-green-300 via-blue-500 to-indigo-600 transition-all duration-500 ease-out overflow-hidden hover:scale-105 hover:shadow-xl">
-        <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -translate-x-full hover:translate-x-full transition-all duration-700"></span>
-        Join Presale
-    </button>
-</Link>
+                        {/* <button className="relative px-4 py-2 font-medium text-sm text-white rounded-full shadow-lg bg-gradient-to-r from-green-300 via-blue-500 to-indigo-600 transition-all duration-500 ease-out overflow-hidden hover:scale-105 hover:shadow-xl">
+                            <span className="absolute inset-0 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 transform -translate-x-full hover:translate-x-full transition-all duration-700"></span>
+                            Join Presale
+                        </button> */}
+                        {/* <button
+                            className="px-4 py-3 text-xs min-w-36 text-black hover:text-[#ffff] font-semibold rounded-full shadow-lg bg-gradient-to-r from-green-200 via-blue-400 to-purple-500 hover:opacity-90 transition-all duration-300"
+                        >
+                            Join Presale
+                        </button> */}
+                        <button className="custom_navbar_btn overflow-hidden hover:scale-105 hover:shadow-xl">
+                            <span className="w-full h-full relative transition-all duration-500 ease-out">
+                                Join Presale
+                            </span>
+                        </button>
+                    </Link>
 
                     {/* Mobile Menu Button */}
                     <div className="lg:hidden">

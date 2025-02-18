@@ -23,7 +23,7 @@ const Bankinstitutions = () => {
                 >
                     <Breadcrumbs />
                     <motion.h1
-                        className="text-4xl leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                        className="text-4xl leading-normal font-sans font-bold font-title   headings-gr"
                         initial={{ opacity: 1, y: -50 }}
                         whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
                         transition={{ duration: 1, delay: 0.2 }}

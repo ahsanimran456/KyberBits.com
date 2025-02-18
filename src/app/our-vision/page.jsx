@@ -53,7 +53,7 @@ const Dvpn = () => {
                     <Breadcrumbs />
 
                     <motion.h1
-                        className="text-4xl leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                        className="text-4xl leading-normal  font-bold font-title   headings-gr"
                         initial={{ opacity: 1, y: -50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
@@ -106,7 +106,7 @@ const Dvpn = () => {
                 >
                     <div className="w-full max-w-[250px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[600px]">
                         <Image
-                            src={mobile}
+                            src={'https://www.qubetics.com/img/our-mission/our-mission.webp'}
                             alt="Vip KyberBits"
                             className="object-cover rounded-lg"
                             width={600}
@@ -126,7 +126,7 @@ const Dvpn = () => {
                     viewport={{ once: false }} // Keep triggering animation when in view
                 >
                     <motion.div
-                        className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                        className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
                         initial={{ opacity: 0, y: -50 }}
                         whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
                         transition={{ duration: 1, delay: 0.2 }}
@@ -153,13 +153,15 @@ const Dvpn = () => {
                         transition={{ delay: 0.6, duration: 1 }}
                         viewport={{ once: false }}
                     >
-                        <button className="px-6 py-3 rounded-full w-[200px] bg-[#202020] hover:bg-gray-800 transition">
-                            Learn More
+                        <button className="custom_btn_sec buttons_all_sec ">
+                            <span className="bg-[#141414] w-full h-full flex items-center justify-center">
+                                Learn More
+                            </span>
                         </button>
                     </motion.div>
                 </motion.div>
             </section>
-            <section className="relative max-w-screen-xl     mx-auto flex flex-wrap items-center w-full text-white pt-24 ">
+            <section className="relative max-w-screen-xl     mx-auto flex flex-wrap items-center w-full text-white pt-24  ">
                 {/* Content Section */}
                 <motion.div
                     className="w-[100%] lg:w-[50%] flex flex-col lg:p-8 md:p-6 p-4 space-y-7"
@@ -169,7 +171,7 @@ const Dvpn = () => {
                     viewport={{ once: false }} // Keep triggering animation when in view
                 >
                     <motion.div
-                        className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                        className="lg:text-4xl md:text-3xl text-3xl lg:max-w-[33rem] w-full leading-normal font-title font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
                         initial={{ opacity: 0, y: -50 }}
                         whileInView={{ opacity: 1, y: 0 }} // Trigger animation when in view
                         transition={{ duration: 1, delay: 0.2 }}
@@ -196,8 +198,10 @@ const Dvpn = () => {
                         transition={{ delay: 0.6, duration: 1 }}
                         viewport={{ once: false }}
                     >
-                        <button className="px-6 py-3 rounded-full w-[200px] bg-[#202020] hover:bg-gray-800 transition">
-                            Learn More
+                        <button className="custom_btn_sec buttons_all_sec ">
+                            <span className="bg-[#141414] w-full h-full flex items-center justify-center">
+                                Learn More
+                            </span>
                         </button>
                     </motion.div>
                 </motion.div>
@@ -210,7 +214,7 @@ const Dvpn = () => {
                 >
                     <div className="w-full max-w-[250px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[600px]">
                         <Image
-                            src={mobile}
+                            src={'https://www.qubetics.com/img/our-goal/our-goal.webp'}
                             alt="Vip KyberBits"
                             className="object-cover rounded-lg"
                             width={600}
@@ -221,7 +225,7 @@ const Dvpn = () => {
                     </div>
                 </motion.div>
             </section>
-            <section className="max-w-screen-xl mx-auto flex items-center relative w-full mt-20 text-white bg-shades-left">
+            <section className="max-w-screen-xl mx-auto flex items-center relative w-full mt-20 text-white ">
 
                 <motion.div
                     className="w-[100%] lg:w-[50%] text-center flex justify-center"
@@ -232,7 +236,7 @@ const Dvpn = () => {
                 >
                     <div className="w-full max-w-[250px] sm:max-w-[350px] md:max-w-[400px] lg:max-w-[600px]">
                         <Image
-                            src={mobile}
+                            src={'https://www.qubetics.com/img/our-approach/our-approach.webp'}
                             alt="Vip KyberBits"
                             className="object-cover rounded-lg"
                             width={600}
@@ -250,7 +254,7 @@ const Dvpn = () => {
                 >
 
                     <motion.h1
-                        className="text-4xl leading-normal font-sans font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                        className="text-4xl leading-normal  font-bold font-title text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
                         initial={{ opacity: 1, y: -50 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 1, delay: 0.2 }}
@@ -273,7 +277,7 @@ const Dvpn = () => {
             <section className="max-w-screen-xl mx-auto text-white mt-20 px-4">
                 {/* Title with Enhanced Animation */}
                 <motion.h1
-                    className="text-5xl text-center font-bold text-transparent bg-clip-text bg-gradient-to-r from-green-400 via-blue-500 to-purple-600"
+                    className="text-4xl text-center font-bold font-title  headings-gr"
                     initial={{ opacity: 0, scale: 0.8 }}
                     whileInView={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 1 }}
@@ -330,30 +334,33 @@ const Dvpn = () => {
                     className="w-full max-w-[1000px] h-auto object-cover"
                 />
             </section>
-            <section className="max-w-screen-lg mx-auto text-center relative text-white py-16 px-6 bg-shades">
-            {/* <section className="max-w-screen-xl mx-auto  items-center relative  mt-20 px-6 text-white bg-shades"> */}
-  {/* Heading */}
-  <h1 className="text-4xl font-bold leading-tight">
-    Let's collaborate to unlock the transformative potential of blockchain and reshape the future of finance together.
-  </h1>
+            <section className="max-w-screen-lg mx-auto text-center relative text-white pb-16 pt-4 -mt-24 px-6 bg-shades">
+                {/* <section className="max-w-screen-xl mx-auto  items-center relative  mt-20 px-6 text-white bg-shades"> */}
+                {/* Heading */}
+                <h1 className="text-4xl font-bold leading-tight font-title">
+                    Let's collaborate to unlock the transformative potential of blockchain and reshape the future of finance together.
+                </h1>
 
-  {/* Paragraph */}
-  <p className="text-gray-400 mt-6 text-lg">
-    We invite you to be part of the Qubetics journey as we continue to develop and refine our ecosystem. Whether you are looking to invest, explore blockchain technology, or expand your knowledge of digital finance, Qubetics is here to provide support and guidance.
-  </p>
+                {/* Paragraph */}
+                <p className="text-gray-400 mt-6 text-lg">
+                    We invite you to be part of the Qubetics journey as we continue to develop and refine our ecosystem. Whether you are looking to invest, explore blockchain technology, or expand your knowledge of digital finance, Qubetics is here to provide support and guidance.
+                </p>
 
-  {/* Input and Button */}
-  <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
-    <input
-      type="email"
-      placeholder="Email"
-      className="bg-gray-900 text-white px-5 py-4 rounded-3xl w-full  md:w-96 outline-none"
-    />
-   <button className="px-6 py-4 rounded-full w-[200px] bg-[#202020] hover:bg-gray-800 transition">
-            Join Now
-          </button>
-  </div>
-</section>
+                {/* Input and Button */}
+                <div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
+                    <input
+                        type="email"
+                        placeholder="Email"
+                        className="bg-gray-900 text-white px-5 py-4 rounded-3xl w-full  md:w-96 outline-none"
+                    />
+
+                    <button className="custom_btn_sec buttons_all_sec " style={{width:"20%"}}>
+                        <span className="bg-[#141414] w-full h-full flex items-center justify-center">
+                            Join Now
+                        </span>
+                    </button>
+                </div>
+            </section>
 
 
 

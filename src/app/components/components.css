@@ -75,6 +75,24 @@
     opacity: 0.5;
 }
 
+.bg-shades-bottom::before {
+    content: " ";
+    position: absolute;
+    width: 53rem;
+    height: 28rem;
+    left: 22rem;
+    top: -73px;
+    /* bottom: 12rem; */
+    /* transform: rotate(-45deg); */
+    z-index: -1;
+    pointer-events: none;
+    border-radius: 50%;
+    background: conic-gradient(from 180deg, #4ade80 35deg, #3b82f6 150deg, #9333ea 360deg);
+    filter: blur(150px);
+    opacity: .5;
+}
+
+
 .bg-shades-hero::before{
     content: "";
     position: absolute !important;
@@ -320,9 +338,7 @@ opacity: 0.5;
     height: 70rem;
 }
 .chart-container-inner::before {
-
     top: 10% !important;
-   
 }
 
 .chart-container::after {
@@ -340,3 +356,67 @@ opacity: 0.5;
     height: 30rem;
     max-width: 108rem;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.Tokenomics_section{
+    position: relative;
+  overflow: hidden;
+}
+
+.Tokenomics_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('./../../../public/tikno.gif') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.5; 
+    animation: moveBackground 10s linear infinite;
+  }
+  
+  @keyframes moveBackground {
+    0% { background-position: 0% 0%; }
+    100% { background-position: 100% 100%; }
+  }
+
+
+
+
+  .countdown-section {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .countdown-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../../../public//Assests//images/pre4.png"); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: -1;
+    opacity: 0.3;
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+  }
+  
