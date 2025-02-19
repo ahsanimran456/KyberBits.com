@@ -26,7 +26,7 @@ const Tokennomics = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         viewport={{ once: false }}
                     >
-                        TICS is central to the KyberBits Network's functionality, enabling the transition from a conceptual model to a fully operational platform.
+                        KYBITS is central to the KyberBits Network's functionality, enabling the transition from a conceptual model to a fully operational platform.
                     </motion.h1>
                     <motion.p
                         className="text-gray-500 font-sans leading-loose text-md"
@@ -35,7 +35,7 @@ const Tokennomics = () => {
                         transition={{ duration: 1, delay: 0.4 }}
                         viewport={{ once: false }}
                     >
-                        The total supply of tokens will be determined by the amount sold during the presale, which will consistently represent 12.85% of the total supply.
+                        The total supply of tokens will be determined by the amount sold during the presale which will consistently represent 12.85% of the total supply
                     </motion.p>
                 </motion.div>
 
@@ -78,35 +78,35 @@ const Tokennomics = () => {
                     transition={{ duration: 1, delay: 0.4 }}
                     viewport={{ once: false }}
                 >
-                    KyberBits is underpinned by a carefully crafted tokenomics structure designed to support the sustainability and growth of our blockchain ecosystem. The total supply of KyberBits tokens (TICS) wil be determined by the amount of tokens sold during the presale.
+                    KyberBits is underpinned by a carefully crafted tokenomics structure designed to support the sustainability and growth of our blockchain ecosystem. The total supply of KyberBits tokens (KYBITS) wil be determined by the amount of tokens sold during the presale.
                 </motion.p>
                 <h6 className="text-2xl  font-bold mb-10 text-white">
                     Token Distribution Overview
                 </h6>
                 <ul className="list-disc pl-8 space-y-4 ">
                     <li>
-                        <strong>Presale/ICO (12.85%)</strong>: 12.85% of total tokens are set aside for presale and ICO, allowing early participants to support the initial phase of the project.
+                        <strong>Presale/ICO: 12.85%</strong>: of total tokens are set aside for presale and ICO, allowing early participants to support the initial phase of the project.
                     </li>
                     <li>
-                        <strong>Team (11.88%)</strong>: of tokens are allocated to the team, with a vesting period that includes a 6-month cliff to ensure long-term commitment.
+                        <strong>Team: 11.88% </strong>: of tokens are allocated to the team, with a vesting period that includes a 6-month cliff to ensure long-term commitment.
                     </li>
                     <li>
-                        <strong>Ecosystem (20.85%)</strong>: is dedicated to reinforcing the KyberBits ecosystem, which encompasses liquidity provision and validator rewards to sustain a robust environment.
+                        <strong>Ecosystem: 20.85%</strong>: is dedis dedicated to reinforcing the KyberBits ecosystem, which encompasses liquidity provision and validator rewards to sustain a robust environment.
                     </li>
                     <li>
-                        <strong>Advisors (3.12%)</strong>: is reserved for advisors, who provide essential strategic guidance to shape the project’s direction. These tokens will also have a vesting period that also includes a 6-month cliff.
+                        <strong>Advisors: 3.12%</strong>: is reserved for advisors, who provide essential strategic guidance to shape the project’s direction. These tokens will also have a vesting period that also includes a 6-month cliff.
                     </li>
                     <li>
-                        <strong>Foundation (18.23%)</strong>: supports the KyberBits Foundation, funding promising projects that leverage the KyberBits network.
+                        <strong>Foundation: 18.23%</strong>: supports the KyberBits Foundation, funding promising projects that leverage the KyberBits network.
                     </li>
                     <li>
-                        <strong>Network Operations (13.78%)</strong>: ensures the smooth operation of the KyberBits network, covering ongoing maintenance and operational needs.
+                        <strong>Network Operations: 13.78%</strong>: ensures the smooth operation of the KyberBits network, covering ongoing maintenance and operational needs.
                     </li>
                     <li>
-                        <strong>Reserves (15%)</strong>: is kept in reserve to address unforeseen needs and maintain stability within the marketplace as necessary.
+                        <strong>Reserves: 15%</strong>: is kept in reserve to address unforeseen needs and maintain stability within the marketplace as necessary.
                     </li>
                     <li>
-                        <strong>Community Incentives (4.29%)</strong>: aims to foster community growth and encourage adoption through various incentives.
+                        <strong>Community Incentives: 4.29%</strong>: aims to foster community growth and encourage adoption through various incentives.
                     </li>
                 </ul>
                 <motion.p

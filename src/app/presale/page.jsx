@@ -137,7 +137,7 @@ const Page = () => {
                         className=""
                       />
                       <h2 className="text-white text-lg font-bold">
-                        1 TICS = {""}
+                        1 KYBITS = {""}
                       </h2>
                     </div>
                     <div className="flex items-center gap-2">
@@ -340,7 +340,7 @@ const Page = () => {
               How to buy
             </h1>
             <p className='text-4xl font-bold mt-6 leading-[3.5rem]'>
-              Buying TICS with
+              Buying KYBITS with
               <br />
               ETH, BNB, USDT, USDC or BUSD
             </p>
@@ -439,7 +439,7 @@ const Page = () => {
           <div className='flex mx-auto justify-center items-center flex-col mt-16 mb-10 text-center'>
             <div>
               <p className='text-4xl font-bold mt-6 leading-[3.5rem]'>
-                Buying TICS with
+                Buying KYBITS with
                 <br />
                 BTC, SOL, LTC, TRX, USDT-ERC20 and More
               </p>
