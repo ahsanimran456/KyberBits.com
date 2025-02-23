@@ -38,7 +38,7 @@ const Wallet = () => {
                         transition={{ duration: 1, delay: 0.4 }}
                         viewport={{ once: false }}
                     >
-                        Explore the KyberBits multi-chain crypto wallet, a non-custodial, open-source hub. Experience in-app feeless $BITS transfers, debit and virtual card options, smooth Apple Pay and Google Pay integration, a decentralized VPN (dVPN) service, and a gateway to a tokenized asset marketplace—all within a single application.
+                        Explore the KyberBits multi-chain crypto wallet, a non-custodial, open-source hub. Experience in-app feeless KYBITS transfers, debit and virtual card options, smooth Apple Pay and Google Pay integration, a decentralized VPN (dVPN) service, and a gateway to a tokenized asset marketplace—all within a single application.
                     </motion.p>
                 </motion.div>
 
@@ -127,7 +127,7 @@ const Wallet = () => {
                         transition={{ duration: 1, delay: 0.4 }}
                         viewport={{ once: false }}
                     >
-                        A standout feature of the KyberBits Wallet would be its integration with debit cards recognized by major financial networks such as Visa and Mastercard. This integration will further be enhanced by compatibility with popular mobile payment systems like Apple Pay and Google Pay. Users will have the flexibility to link their KyberBits Wallet to these services, enabling them to use their $BITS tokens through widely accepted mobile payment platforms. This amalgamation of traditional and modern payment methods significantly streamlines the process of spending cryptocurrency in everyday transactions.
+                        A standout feature of the KyberBits Wallet would be its integration with debit cards recognized by major financial networks such as Visa and Mastercard. This integration will further be enhanced by compatibility with popular mobile payment systems like Apple Pay and Google Pay. Users will have the flexibility to link their KyberBits Wallet to these services, enabling them to use their KYBITS tokens through widely accepted mobile payment platforms. This amalgamation of traditional and modern payment methods significantly streamlines the process of spending cryptocurrency in everyday transactions.
                     </motion.p>
                     <motion.h1
                         className="text-lg leading-normal font-sans font-bold  text-white"
@@ -193,7 +193,7 @@ const Wallet = () => {
                         transition={{ duration: 1, delay: 0.2 }}
                         viewport={{ once: false }}
                     >
-                        Gasless Transfers of TICS Tokens
+                        Gasless Transfers of KYBITS Tokens
                     </motion.h1>
 
                     <motion.p

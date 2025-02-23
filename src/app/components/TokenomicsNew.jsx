@@ -9,7 +9,7 @@ import './components.css'
 const TokenomicsNew = ({ ispageinner }) => {
     const heading = "Tokenomics";
     const description =
-        "The total supply of $BITS tokens will be determined by the amount sold during the presale, which will consistently represent 12.85% of the total supply. This approach ensures flexibility and scalability in managing the supply based on participant interest and investment.";
+        "The total supply of KYBITS tokens will be determined by the amount sold during the presale, which will consistently represent 12.85% of the total supply. This approach ensures flexibility and scalability in managing the supply based on participant interest and investment.";
 
     return (
         <section className={` relative  Tokenomics_section   mx-auto flex flex-col justify-center items-center text-center text-white  pt-9`}>

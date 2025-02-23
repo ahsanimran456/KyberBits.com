@@ -154,7 +154,7 @@ const Tokennomics = () => {
                 >
                     KyberBits has developed a careful launch strategy for the BITS token aimed at maintaining market stability. At the outset, liquidity will be introduced in a phased manner to help manage market dynamics effectively. Renowned market makers will be engaged to assist in stabilizing the token as it becomes publicly tradable. After navigating the initial market adjustments typical for new tokens, we will methodically increase liquidity and introduce additional market makers.
 
-                    This approach is intended to support a stable trading environment for the $BITS token, complementing the overall development and expansion goals of the KyberBits ecosystem. Our strategy focuses on balancing immediate market needs with the long-term sustainability of the token, ensuring that it serves the interests of the community and stakeholders effectively.
+                    This approach is intended to support a stable trading environment for the KYBITS token, complementing the overall development and expansion goals of the KyberBits ecosystem. Our strategy focuses on balancing immediate market needs with the long-term sustainability of the token, ensuring that it serves the interests of the community and stakeholders effectively.
                 </motion.p>
             </section>
             <section className="max-w-screen-xl mx-auto flex justify-center items-center mt-20 w-full text-white space-y-10">

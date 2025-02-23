@@ -35,7 +35,7 @@ const NewEra = () => {
           transition={{ duration: 1, delay: 0.4 }}
           viewport={{ once: false }}
         >
-          The integration of KY BITS tokens with the soon-to-be-deployed USDC/USDT-backed KUSD, promotes market stability and accurate transaction reflections, enhancing user confidence. This strategic pairing is designed to increase demand for $BITS, fostering enhanced utility and user engagement due to its security and potential.
+          The integration of KYBITS tokens with the soon-to-be-deployed USDC/USDT-backed KUSD, promotes market stability and accurate transaction reflections, enhancing user confidence. This strategic pairing is designed to increase demand for KYBITS, fostering enhanced utility and user engagement due to its security and potential.
         </motion.p>
 
         <motion.div
