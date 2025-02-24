@@ -343,7 +343,7 @@ const Dvpn = () => {
 
                 {/* Paragraph */}
                 <p className="text-gray-400 mt-6 text-lg">
-                    We invite you to be part of the Qubetics journey as we continue to develop and refine our ecosystem. Whether you are looking to invest, explore blockchain technology, or expand your knowledge of digital finance, Qubetics is here to provide support and guidance.
+                    We invite you to be part of the KyberBits journey as we continue to develop and refine our ecosystem. Whether you are looking to invest, explore blockchain technology, or expand your knowledge of digital finance, KyberBits is here to provide support and guidance.
                 </p>
 
                 {/* Input and Button */}

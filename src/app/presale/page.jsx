@@ -185,13 +185,13 @@ const Page = () => {
                             <div className='inner-noch'>
                               <div className='flex items-center gap-2'>
                                 <Image
-                                  src='/center.png'
+                                  src='/coin.png'
                                   alt="logo"
-                                  width={40}
-                                  height={40}
+                                  width={30}
+                                  height={30}
                                   className=""
                                 />
-                                <h3 className='text-md font-bold'>472,422,444 TICS</h3>
+                                <h3 className='text-md font-bold'>472,422,444 KYBITS</h3>
                               </div>
                               <div className='flex justify-center items-center'>
                                 Tokens Sold
@@ -310,8 +310,8 @@ const Page = () => {
                     <div className="flex flex-1 items-center bg-black rounded-full px-4 py-2 ">
                       <span className="text-white text-lg">2659.321234</span>
                       <div className="flex items-center gap-2 ml-auto">
-                        <span className="text-gray-400">TICS</span>
-                        <Image src={'/center.png'} alt="TICS" width={40} height={40} />
+                        <span className="text-gray-400">KYBITS</span>
+                        <Image src={'/coin.png'} alt="KYBITS" width={30} height={30} />
                       </div>
                     </div>
                   </div>
@@ -397,7 +397,7 @@ const Page = () => {
             </div>
             <div className='flex justify-center items-center gap-x-2 mt-6'>
               <p className=' text-md text-[#fffc] text-center font-normal leading-9 p-0 m-0'>
-                Ready to invest? Simply pick your preferred currency on our site, input how many TICS tokens you'd like, and hit 'Buy Now'. A prompt will pop up from your wallet for transaction confirmation, where you’ll also see the gas fees.
+                Ready to invest? Simply pick your preferred currency on our site, input how many KYBITS tokens you'd like, and hit 'Buy Now'. A prompt will pop up from your wallet for transaction confirmation, where you’ll also see the gas fees.
                 Note: Purchasing with USDT/USDC may involve two approvals—one to okay the contract and another for the actual payment.
               </p>
             </div>
@@ -421,7 +421,7 @@ const Page = () => {
             </div>
             <div className='flex justify-center items-center gap-x-2 mt-6'>
               <p className=' text-md text-[#fffc] text-center font-normal leading-9 p-0 m-0'>
-                Once our presale wraps up, you can collect your TICS tokens through our website or wait for an airdrop straight to your wallet. Meanwhile, keep an eye on your investment and the token prices from your dashboard. Just connect your wallet to our website, and voilà—you’re there!
+                Once our presale wraps up, you can collect your KYBITS tokens through our website or wait for an airdrop straight to your wallet. Meanwhile, keep an eye on your investment and the token prices from your dashboard. Just connect your wallet to our website, and voilà—you’re there!
               </p>
             </div>
             <div className="flex justify-center  mt-14">
@@ -490,7 +490,7 @@ const Page = () => {
             </div>
             <div className='flex justify-center items-center gap-x-2 mt-6'>
               <p className=' text-md text-[#fffc] text-center font-normal leading-9 p-0 m-0'>
-                Ready to invest? Simply pick your preferred currency on our site, input how many TICS tokens you'd like, and hit 'Buy Now'. A prompt will pop up from your wallet for transaction confirmation, where you’ll also see the gas fees.
+                Ready to invest? Simply pick your preferred currency on our site, input how many KYBITS tokens you'd like, and hit 'Buy Now'. A prompt will pop up from your wallet for transaction confirmation, where you’ll also see the gas fees.
                 Note: Purchasing with USDT/USDC may involve two approvals—one to okay the contract and another for the actual payment.
               </p>
             </div>
@@ -514,7 +514,7 @@ const Page = () => {
             </div>
             <div className='flex justify-center items-center gap-x-2 mt-6'>
               <p className=' text-md text-[#fffc] text-center font-normal leading-9 p-0 m-0'>
-                After our presale ends, claiming your TICS tokens will be a breeze—you can do it right from our website or receive them through an airdrop. Your dashboard, accessible by connecting your wallet to our site, will show you all your token details and values.
+                After our presale ends, claiming your KYBITS tokens will be a breeze—you can do it right from our website or receive them through an airdrop. Your dashboard, accessible by connecting your wallet to our site, will show you all your token details and values.
               </p>
             </div>
             <div className="flex justify-center  mt-14">
@@ -530,7 +530,7 @@ const Page = () => {
 
           <div className='flex justify-center items-center gap-x-2 mt-16'>
             <p className=' text-md text-[#fffc] italic text-center font-normal leading-9 p-0 m-0'>
-              Disclaimer: Please note that TICS tokens will be distributed to purchasers through an airdrop or a claim process available on our website. Tokens will only be sent to the wallet address used at the time of purchase. It is crucial to maintain access to your wallet, as recovery of tokens is not possible if access is lost. Keep your wallet details secure.
+              Disclaimer: Please note that KYBITS tokens will be distributed to purchasers through an airdrop or a claim process available on our website. Tokens will only be sent to the wallet address used at the time of purchase. It is crucial to maintain access to your wallet, as recovery of tokens is not possible if access is lost. Keep your wallet details secure.
             </p>
           </div>
         </div>

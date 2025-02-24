@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Image from "next/image";
 import "./HeroSection.css";
+import { useGSAP } from "@gsap/react";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,72 +16,47 @@ const AnimatedSection = () => {
   const centerRef = useRef(null);
   let context = useRef(null); // Store GSAP context to clean up properly
 
-  useEffect(() => {
-    // Create GSAP context
-    context.current = gsap.context(() => {
-      // Background image and hero section animation
-      gsap
-        .timeline({
-          scrollTrigger: {
-            trigger: wrapperRef.current,
-            start: "top top",
-            end: "+=150%",
-            pin: true,
-            scrub: true,
-            markers: false,
-          },
-        })
-        .to(imgRef.current, {
-          scale: 4,
-          z: 350,
-          transformOrigin: "center center",
-          ease: "power1.inOut",
-        })
-        .to(
-          heroRef.current,
-          {
-            scale: 1.1,
-            transformOrigin: "center center",
-            ease: "power1.inOut",
-          },
-          "<"
-        );
-
-      // Center image animation
-      gsap.fromTo(
-        centerRef.current,
-        { scale: 0.8, opacity: 0 },
-        { scale: 1, opacity: 1, duration: 1, ease: "power2.out" }
-      );
-
-      // Continuous pulsing effect
-      gsap.to(centerRef.current, {
-        scale: 1.05,
-        duration: 1.5,
-        repeat: -1,
-        yoyo: true,
-        ease: "power1.inOut",
-        delay: 1,
-      });
+  useGSAP(() => {
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: wrapperRef.current,
+        start: "top top",
+        end: "+=80%",
+        pin: true,
+        scrub: 0.5,
+        // markers:true
+      },
     });
 
-    return () => {
-      if (context.current) {
-        context.current.revert(); // Cleanup GSAP animations
-      }
+    tl.to(imgRef.current, {
+      scale: 4,
+      z: 350,
+      transformOrigin: "center center",
+      ease: "power1.inOut",
+    }).to(
+      heroRef.current,
+      {
+        scale: 1.1,
+        transformOrigin: "center center",
+        ease: "power1.inOut",
+      },
+      "<"
+    );
 
-      gsap.killTweensOf("*"); // Kill all animations
-      gsap.killTweensOf(centerRef.current); // Stop pulsing animation
+    gsap.fromTo(
+      centerRef.current,
+      { scale: 0.8, opacity: 0 },
+      { scale: 1, opacity: 1, duration: 0.5, ease: "power2.out" }
+    );
 
-      // Cleanup ScrollTrigger instances
-      ScrollTrigger.getAll().forEach(trigger => trigger.kill());
-
-      // Reset refs to null
-      wrapperRef.current = null;
-      imgRef.current = null;
-      heroRef.current = null;
-      centerRef.current = null;
-    };
+    gsap.to(centerRef.current, {
+      scale: 1.05,
+      duration: 1.5,
+      repeat: -1,
+      yoyo: true,
+      ease: "power1.inOut",
+      delay: 0.5,
+    });
   }, []);
 
   return (
